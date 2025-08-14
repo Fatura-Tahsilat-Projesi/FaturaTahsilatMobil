@@ -14,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         WebView myWebView = (WebView)  findViewById(R.id.webView);
-        myWebView.loadUrl("http://faturatahsilat.yazilimca.org");
-        //myWebView.loadUrl("https://faturatahsilatfronstatic.z22.web.core.windows.net");
+        myWebView.loadUrl(getString(R.string.web_url));
         WebSettings settings = myWebView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
+        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
     }
 
 

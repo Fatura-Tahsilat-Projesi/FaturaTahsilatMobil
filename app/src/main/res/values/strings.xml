@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Fatura Tahsilat</string>
+    <string name="web_url">http://faturatahsilat.yazilimca.org</string>
 </resources>
